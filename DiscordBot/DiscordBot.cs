@@ -1,6 +1,8 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using DiscordBot.Modules;
+using DiscordBot.Collection.Users;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -8,31 +10,45 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using Victoria;
 
 namespace DiscordBot
 {
     class DiscordBot
     {
+        public const ulong GuildID = 238744571213905920;
+
         private DiscordSocketClient client;
         private CommandService commands;
+        private Lavalink lavalink;
         private IServiceProvider services;
 
         public async void Run(string token)
         {
             client = new DiscordSocketClient();
             commands = new CommandService();
+            lavalink = new Lavalink();
 
             services = new ServiceCollection()
                 .AddSingleton(client)
                 .AddSingleton(commands)
+                .AddSingleton(lavalink)
+                .AddSingleton<Audio>()
                 .BuildServiceProvider();
 
+            Application.ApplicationExit += OnExit;
+            lavalink.Log += Log;
             client.Log += Log;
+            client.UserJoined += OnUserJoin;
+            client.UserLeft += OnUserLeave;
+            client.ReactionAdded += OnReact;
+            client.Ready += OnReady;
 
             await RegisterCommands();
             await client.LoginAsync(TokenType.Bot, token);
             await client.StartAsync();
-            Form1.instance.AssignClient();
+            Menu.instance.AssignClient();
         }
 
         public async void Terminate()
@@ -43,16 +59,21 @@ namespace DiscordBot
 
         private Task Log(LogMessage msg)
         {
-            Form1.instance.Log(msg.Message);
+            Menu.instance.Log(msg.Message);
             return Task.CompletedTask;
         }
 
         private async Task HandleCommands(SocketMessage msg)
         {
             SocketUserMessage message = msg as SocketUserMessage;
-            Form1.instance.Log(string.Format("{0}: {1}", message.Author.Username, message.Content));
-
             if (message == null || message.Author.IsBot) return;
+
+            Menu.instance.Log(string.Format("{0}: {1}", message.Author.Username, message.Content));
+            User user = Users.GetUser(message.Author);
+
+            user.Messages++;
+            User.IncreaseXP(user, 10, message.Channel);
+            Users.SaveUsers();
 
             int argPos = 0;
             if (message.HasStringPrefix(".", ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos))
@@ -60,7 +81,7 @@ namespace DiscordBot
                 SocketCommandContext context = new SocketCommandContext(client, message);
                 IResult result = await commands.ExecuteAsync(context, argPos, services);
 
-                if (!result.IsSuccess) Form1.instance.Log(result.ErrorReason);
+                if (!result.IsSuccess) Menu.instance.Log(result.ErrorReason);
             }
         }
 
@@ -68,6 +89,37 @@ namespace DiscordBot
         {
             client.MessageReceived += HandleCommands;
             await commands.AddModulesAsync(Assembly.GetEntryAssembly(), services);
+        }
+
+        private Task OnUserJoin(SocketGuildUser user)
+        {
+            Menu.instance.Log(string.Format("{0} joined at [{1}].", user.Username, DateTime.UtcNow.ToString("HH:mm")));
+            return Task.CompletedTask;
+        }
+
+        private Task OnUserLeave(SocketGuildUser user)
+        {
+            Menu.instance.Log(string.Format("{0} left at [{1}].", user.Username, DateTime.UtcNow.ToString("HH:mm")));
+            return Task.CompletedTask;
+        }
+
+        private Task OnReact(Cacheable<IUserMessage, ulong> message, ISocketMessageChannel channel, SocketReaction reaction)
+        {
+            User user = Users.GetUser((SocketGuildUser)reaction.User);
+            user.Reactions++;
+            Users.SaveUsers();
+            return Task.CompletedTask;
+        }
+
+        private async Task OnReady()
+        {
+            LavaNode node = await lavalink.AddNodeAsync(client);
+            node.TrackFinished += services.GetService<Audio>().OnFinished;
+        }
+
+        private void OnExit(object sender, EventArgs e)
+        {
+            Terminate();
         }
 
         public DiscordSocketClient GetClient() { return client; }

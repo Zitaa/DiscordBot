@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "Zita",
+    "ID": 171731188900298752,
+    "Level": 11,
+    "XP": 370,
+    "RequiredXP": 566,
+    "Messages": 172,
+    "Reactions": 8
+  },
+  {
+    "Name": "Patrick",
+    "ID": 207456576125009920,
+    "Level": 0,
+    "XP": 20,
+    "RequiredXP": 50,
+    "Messages": 0,
+    "Reactions": 0
+  },
+  {
+    "Name": "Achtung Kraut",
+    "ID": 224964414636425217,
+    "Level": 2,
+    "XP": 50,
+    "RequiredXP": 77,
+    "Messages": 3,
+    "Reactions": 0
+  },
+  {
+    "Name": "chim",
+    "ID": 215607872342458369,
+    "Level": 5,
+    "XP": 40,
+    "RequiredXP": 150,
+    "Messages": 46,
+    "Reactions": 0
+  },
+  {
+    "Name": "Mingus.",
+    "ID": 226860500112113664,
+    "Level": 0,
+    "XP": 30,
+    "RequiredXP": 50,
+    "Messages": 3,
+    "Reactions": 0
+  },
+  {
+    "Name": "Dorth",
+    "ID": 230159674777796625,
+    "Level": 0,
+    "XP": 10,
+    "RequiredXP": 50,
+    "Messages": 1,
+    "Reactions": 0
+  }
+]
