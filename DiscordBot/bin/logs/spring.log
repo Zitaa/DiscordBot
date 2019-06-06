@@ -858,3 +858,4 @@ Identify and stop the process that's listening on port 2333 or configure this ap
 2019-06-06 17:44:41.253  INFO 18384 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
 2019-06-06 17:45:14.293  INFO 18372 --- [XNIO-2 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:52677 -- CloseStatus[code=1006, reason=]
 2019-06-06 17:45:14.294  INFO 18372 --- [XNIO-2 I/O-1] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2019-06-06 17:45:14.295  INFO 18372 --- [XNIO-2 I/O-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.

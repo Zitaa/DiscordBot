@@ -10,6 +10,7 @@ using Victoria.Entities.Enums;
 
 namespace DiscordBot.Modules
 {
+    //Issue: songs not playing after startup
     public class Audio
     {
         public bool Loop { get; private set; } = false;
