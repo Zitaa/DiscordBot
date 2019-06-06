@@ -2,51 +2,87 @@
   {
     "Name": "Zita",
     "ID": 171731188900298752,
-    "Level": 11,
-    "XP": 370,
-    "RequiredXP": 566,
-    "Messages": 172,
-    "Reactions": 8
+    "Level": 14,
+    "XP": 100,
+    "RequiredXP": 1103,
+    "Messages": 362,
+    "Reactions": 10
   },
   {
     "Name": "Patrick",
     "ID": 207456576125009920,
-    "Level": 0,
-    "XP": 20,
-    "RequiredXP": 50,
-    "Messages": 0,
+    "Level": 1,
+    "XP": 0,
+    "RequiredXP": 62,
+    "Messages": 3,
     "Reactions": 0
   },
   {
     "Name": "Achtung Kraut",
     "ID": 224964414636425217,
-    "Level": 2,
+    "Level": 3,
     "XP": 50,
-    "RequiredXP": 77,
-    "Messages": 3,
+    "RequiredXP": 96,
+    "Messages": 11,
     "Reactions": 0
   },
   {
     "Name": "chim",
     "ID": 215607872342458369,
-    "Level": 5,
-    "XP": 40,
-    "RequiredXP": 150,
-    "Messages": 46,
+    "Level": 8,
+    "XP": 200,
+    "RequiredXP": 291,
+    "Messages": 120,
     "Reactions": 0
   },
   {
     "Name": "Mingus.",
     "ID": 226860500112113664,
-    "Level": 0,
-    "XP": 30,
-    "RequiredXP": 50,
-    "Messages": 3,
+    "Level": 5,
+    "XP": 10,
+    "RequiredXP": 150,
+    "Messages": 43,
     "Reactions": 0
   },
   {
     "Name": "Dorth",
     "ID": 230159674777796625,
+    "Level": 0,
+    "XP": 10,
+    "RequiredXP": 50,
+    "Messages": 1,
+    "Reactions": 0
+  },
+  {
+    "Name": "limex10",
+    "ID": 138046522653802497,
+    "Level": 5,
+    "XP": 80,
+    "RequiredXP": 150,
+    "Messages": 50,
+    "Reactions": 13
+  },
+  {
+    "Name": "Pintura",
+    "ID": 232575105136459778,
+    "Level": 2,
+    "XP": 40,
+    "RequiredXP": 77,
+    "Messages": 16,
+    "Reactions": 0
+  },
+  {
+    "Name": "hippothule",
+    "ID": 248907940084449280,
+    "Level": 1,
+    "XP": 20,
+    "RequiredXP": 62,
+    "Messages": 7,
+    "Reactions": 0
+  },
+  {
+    "Name": "Freaky-Frekly",
+    "ID": 226850393945145344,
     "Level": 0,
     "XP": 10,
     "RequiredXP": 50,

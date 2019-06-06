@@ -5,12 +5,10 @@ using DiscordBot.Modules;
 using DiscordBot.Collection.Users;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DiscordBot.Collection;
 using Victoria;
 
 namespace DiscordBot
@@ -30,6 +28,9 @@ namespace DiscordBot
             commands = new CommandService();
             lavalink = new Lavalink();
 
+            Data.Initialize();
+            Users.Initialize();
+
             services = new ServiceCollection()
                 .AddSingleton(client)
                 .AddSingleton(commands)
@@ -48,7 +49,6 @@ namespace DiscordBot
             await RegisterCommands();
             await client.LoginAsync(TokenType.Bot, token);
             await client.StartAsync();
-            Menu.instance.AssignClient();
         }
 
         public async void Terminate()
@@ -113,6 +113,8 @@ namespace DiscordBot
 
         private async Task OnReady()
         {
+            Menu.instance.AssignClient();
+
             LavaNode node = await lavalink.AddNodeAsync(client);
             node.TrackFinished += services.GetService<Audio>().OnFinished;
         }

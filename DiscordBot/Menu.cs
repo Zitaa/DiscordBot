@@ -23,21 +23,10 @@ namespace DiscordBot
             instance = this;
         }
 
-        private void PopulateGuilds(object sender, EventArgs e)
-        {
-            guildsDropdown.Items.Clear();
-
-            foreach (SocketGuild guild in client.Guilds)
-            {
-                guildsDropdown.Items.Add(guild.Name);
-            }
-            guildsDropdown.SelectedIndexChanged += guildsDropdown_SelectedIndexChanged;
-        }
-
         public void Log(string msg)
         {
             if (msg == "Ready") msg += Environment.NewLine + 
-                    "====================================================================================================";
+                    "-----------------------";
             string time = DateTime.Now.ToString("HH:mm");
             logDisplay.AppendText(string.Format("[{0}] {1}", time, msg + Environment.NewLine));
         }
@@ -45,18 +34,13 @@ namespace DiscordBot
         public void AssignClient()
         {
             client = bot.GetClient();
+            FillDropdowns();
         }
 
         private void connectButton_Click(object sender, EventArgs e)
         {
             bot = new DiscordBot();
             bot.Run(tokenText.Text);
-
-            Data.Initialize();
-            Users.Initialize();
-            Log("Audio ready.");
-
-            guildsDropdown.DropDown += PopulateGuilds;
 
             ST::Timer timer = new ST::Timer(1000 * (60 * 5));
             timer.Elapsed += OnElapsed;
@@ -103,32 +87,69 @@ namespace DiscordBot
             }
         }
 
-        private void guildsDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        public void FillDropdowns()
         {
-            textChannelsDropdown.Items.Clear();
-            voiceChannelsDropdown.Items.Clear();
-            usersDropdown.Items.Clear();
+            SocketGuild guild = client.GetGuild(DiscordBot.GuildID);
 
-            foreach (SocketGuild guild in client.Guilds)
+            foreach (SocketVoiceChannel channel in guild.VoiceChannels)
             {
-                if (guild.Name == guildsDropdown.Text)
+                voiceChannelsDropdown.Items.Add(channel);
+            }
+
+            foreach (SocketTextChannel channel in guild.TextChannels)
+            {
+                textChannelsDropdown.Items.Add(channel);
+            }
+
+            foreach (SocketUser user in guild.Users)
+            {
+                usersDropdown.Items.Add(user);
+            }
+
+            voiceChannelsDropdown.SelectedItem = voiceChannelsDropdown.Items[0];
+            textChannelsDropdown.SelectedItem = textChannelsDropdown.Items[0];
+            usersDropdown.SelectedItem = usersDropdown.Items[0];
+        }
+
+        private async void MessageUser_Click(object sender, EventArgs e)
+        {
+            string username = usersDropdown.SelectedItem.ToString();
+            SocketGuildUser user = null;
+
+            foreach (var guildUser in client.GetGuild(DiscordBot.GuildID).Users)
+            {
+                if (guildUser.ToString().Equals(username))
                 {
-                    foreach (SocketVoiceChannel channel in guild.VoiceChannels)
-                    {
-                        voiceChannelsDropdown.Items.Add(channel);
-                    }
-
-                    foreach (SocketTextChannel channel in guild.TextChannels)
-                    {
-                        textChannelsDropdown.Items.Add(channel);
-                    }
-
-                    foreach (SocketUser user in guild.Users)
-                    {
-                        usersDropdown.Items.Add(user);
-                    }
+                    user = guildUser;
+                    break;
                 }
             }
+
+            string message = messageBox.Text;
+            messageBox.Text = string.Empty;
+
+            IDMChannel channel = await user.GetOrCreateDMChannelAsync();
+            await channel.SendMessageAsync(message);
+        }
+
+        private async void MessageChannel_Click(object sender, EventArgs e)
+        {
+            string channelName = textChannelsDropdown.SelectedItem.ToString();
+            SocketTextChannel channel = null;
+
+            foreach (var guildChannel in client.GetGuild(DiscordBot.GuildID).TextChannels)
+            {
+                if (guildChannel.Name.Equals(channelName))
+                {
+                    channel = guildChannel;
+                    break;
+                }
+            }
+
+            string message = messageBox.Text;
+            messageBox.Text = string.Empty;
+
+            await channel.SendMessageAsync(message);
         }
     }
 }

@@ -33,18 +33,22 @@
             this.tokenText = new System.Windows.Forms.TextBox();
             this.tokenLabel = new System.Windows.Forms.Label();
             this.connectButton = new System.Windows.Forms.Button();
-            this.guildLabel = new System.Windows.Forms.Label();
             this.textChannelLabel = new System.Windows.Forms.Label();
             this.voiceChannelLabel = new System.Windows.Forms.Label();
             this.usersLabel = new System.Windows.Forms.Label();
-            this.guildsDropdown = new System.Windows.Forms.ComboBox();
             this.textChannelsDropdown = new System.Windows.Forms.ComboBox();
             this.voiceChannelsDropdown = new System.Windows.Forms.ComboBox();
             this.usersDropdown = new System.Windows.Forms.ComboBox();
+            this.messageBox = new System.Windows.Forms.RichTextBox();
+            this.messageUser = new System.Windows.Forms.Button();
+            this.messageChannel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logDisplay
             // 
+            this.logDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.logDisplay.Location = new System.Drawing.Point(62, 70);
             this.logDisplay.Name = "logDisplay";
             this.logDisplay.Size = new System.Drawing.Size(610, 393);
@@ -53,11 +57,14 @@
             // 
             // tokenText
             // 
+            this.tokenText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tokenText.Location = new System.Drawing.Point(62, 23);
             this.tokenText.Name = "tokenText";
             this.tokenText.PasswordChar = '*';
             this.tokenText.Size = new System.Drawing.Size(610, 20);
             this.tokenText.TabIndex = 1;
+            this.tokenText.Text = "Mzc0Njk3ODQ1ODQ2MTc5ODUw.XNyPig.f_uk6-NBHa9eCbiUxrBAEzDazWA";
             // 
             // tokenLabel
             // 
@@ -70,6 +77,8 @@
             // 
             // connectButton
             // 
+            this.connectButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.connectButton.Location = new System.Drawing.Point(62, 493);
             this.connectButton.Name = "connectButton";
             this.connectButton.Size = new System.Drawing.Size(610, 86);
@@ -78,21 +87,12 @@
             this.connectButton.UseVisualStyleBackColor = true;
             this.connectButton.Click += new System.EventHandler(this.connectButton_Click);
             // 
-            // guildLabel
-            // 
-            this.guildLabel.AutoSize = true;
-            this.guildLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guildLabel.Location = new System.Drawing.Point(695, 26);
-            this.guildLabel.Name = "guildLabel";
-            this.guildLabel.Size = new System.Drawing.Size(46, 20);
-            this.guildLabel.TabIndex = 4;
-            this.guildLabel.Text = "Guild";
-            // 
             // textChannelLabel
             // 
+            this.textChannelLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textChannelLabel.AutoSize = true;
             this.textChannelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textChannelLabel.Location = new System.Drawing.Point(695, 76);
+            this.textChannelLabel.Location = new System.Drawing.Point(699, 21);
             this.textChannelLabel.Name = "textChannelLabel";
             this.textChannelLabel.Size = new System.Drawing.Size(110, 20);
             this.textChannelLabel.TabIndex = 5;
@@ -100,9 +100,10 @@
             // 
             // voiceChannelLabel
             // 
+            this.voiceChannelLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.voiceChannelLabel.AutoSize = true;
             this.voiceChannelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voiceChannelLabel.Location = new System.Drawing.Point(695, 126);
+            this.voiceChannelLabel.Location = new System.Drawing.Point(699, 71);
             this.voiceChannelLabel.Name = "voiceChannelLabel";
             this.voiceChannelLabel.Size = new System.Drawing.Size(120, 20);
             this.voiceChannelLabel.TabIndex = 6;
@@ -110,60 +111,87 @@
             // 
             // usersLabel
             // 
+            this.usersLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.usersLabel.AutoSize = true;
             this.usersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usersLabel.Location = new System.Drawing.Point(695, 176);
+            this.usersLabel.Location = new System.Drawing.Point(699, 121);
             this.usersLabel.Name = "usersLabel";
             this.usersLabel.Size = new System.Drawing.Size(51, 20);
             this.usersLabel.TabIndex = 7;
             this.usersLabel.Text = "Users";
             // 
-            // guildsDropdown
-            // 
-            this.guildsDropdown.FormattingEnabled = true;
-            this.guildsDropdown.Location = new System.Drawing.Point(846, 25);
-            this.guildsDropdown.Name = "guildsDropdown";
-            this.guildsDropdown.Size = new System.Drawing.Size(179, 21);
-            this.guildsDropdown.TabIndex = 8;
-            this.guildsDropdown.SelectedIndexChanged += new System.EventHandler(this.guildsDropdown_SelectedIndexChanged);
-            // 
             // textChannelsDropdown
             // 
+            this.textChannelsDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textChannelsDropdown.FormattingEnabled = true;
-            this.textChannelsDropdown.Location = new System.Drawing.Point(846, 75);
+            this.textChannelsDropdown.Location = new System.Drawing.Point(850, 20);
             this.textChannelsDropdown.Name = "textChannelsDropdown";
             this.textChannelsDropdown.Size = new System.Drawing.Size(179, 21);
             this.textChannelsDropdown.TabIndex = 9;
             // 
             // voiceChannelsDropdown
             // 
+            this.voiceChannelsDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.voiceChannelsDropdown.FormattingEnabled = true;
-            this.voiceChannelsDropdown.Location = new System.Drawing.Point(846, 125);
+            this.voiceChannelsDropdown.Location = new System.Drawing.Point(850, 70);
             this.voiceChannelsDropdown.Name = "voiceChannelsDropdown";
             this.voiceChannelsDropdown.Size = new System.Drawing.Size(179, 21);
             this.voiceChannelsDropdown.TabIndex = 10;
             // 
             // usersDropdown
             // 
+            this.usersDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.usersDropdown.FormattingEnabled = true;
-            this.usersDropdown.Location = new System.Drawing.Point(846, 175);
+            this.usersDropdown.Location = new System.Drawing.Point(850, 120);
             this.usersDropdown.Name = "usersDropdown";
             this.usersDropdown.Size = new System.Drawing.Size(179, 21);
             this.usersDropdown.TabIndex = 11;
+            // 
+            // messageBox
+            // 
+            this.messageBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.messageBox.Location = new System.Drawing.Point(703, 173);
+            this.messageBox.Name = "messageBox";
+            this.messageBox.Size = new System.Drawing.Size(326, 290);
+            this.messageBox.TabIndex = 12;
+            this.messageBox.Text = "";
+            // 
+            // messageUser
+            // 
+            this.messageUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.messageUser.Location = new System.Drawing.Point(703, 493);
+            this.messageUser.Name = "messageUser";
+            this.messageUser.Size = new System.Drawing.Size(151, 86);
+            this.messageUser.TabIndex = 13;
+            this.messageUser.Text = "Send to User...";
+            this.messageUser.UseVisualStyleBackColor = true;
+            this.messageUser.Click += new System.EventHandler(this.MessageUser_Click);
+            // 
+            // messageChannel
+            // 
+            this.messageChannel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.messageChannel.Location = new System.Drawing.Point(878, 493);
+            this.messageChannel.Name = "messageChannel";
+            this.messageChannel.Size = new System.Drawing.Size(151, 86);
+            this.messageChannel.TabIndex = 14;
+            this.messageChannel.Text = "Send to Channel...";
+            this.messageChannel.UseVisualStyleBackColor = true;
+            this.messageChannel.Click += new System.EventHandler(this.MessageChannel_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 669);
+            this.ClientSize = new System.Drawing.Size(1050, 602);
+            this.Controls.Add(this.messageChannel);
+            this.Controls.Add(this.messageUser);
+            this.Controls.Add(this.messageBox);
             this.Controls.Add(this.usersDropdown);
             this.Controls.Add(this.voiceChannelsDropdown);
             this.Controls.Add(this.textChannelsDropdown);
-            this.Controls.Add(this.guildsDropdown);
             this.Controls.Add(this.usersLabel);
             this.Controls.Add(this.voiceChannelLabel);
             this.Controls.Add(this.textChannelLabel);
-            this.Controls.Add(this.guildLabel);
             this.Controls.Add(this.connectButton);
             this.Controls.Add(this.tokenLabel);
             this.Controls.Add(this.tokenText);
@@ -182,14 +210,15 @@
         private System.Windows.Forms.TextBox tokenText;
         private System.Windows.Forms.Label tokenLabel;
         private System.Windows.Forms.Button connectButton;
-        private System.Windows.Forms.Label guildLabel;
         private System.Windows.Forms.Label textChannelLabel;
         private System.Windows.Forms.Label voiceChannelLabel;
         private System.Windows.Forms.Label usersLabel;
-        private System.Windows.Forms.ComboBox guildsDropdown;
         private System.Windows.Forms.ComboBox textChannelsDropdown;
         private System.Windows.Forms.ComboBox voiceChannelsDropdown;
         private System.Windows.Forms.ComboBox usersDropdown;
+        private System.Windows.Forms.RichTextBox messageBox;
+        private System.Windows.Forms.Button messageUser;
+        private System.Windows.Forms.Button messageChannel;
     }
 }
 

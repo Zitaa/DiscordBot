@@ -97,6 +97,9 @@
     <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Management.Automation.dll.10.0.10586.0\lib\net40\System.Management.Automation.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
     </Reference>
@@ -141,7 +144,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collection\EmbedHandler.cs" />
+    <Compile Include="Resources\Collection\EmbedHandler.cs" />
     <Compile Include="DiscordBot.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -149,12 +152,12 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Collection\Audio.cs" />
-    <Compile Include="Collection\Data.cs" />
-    <Compile Include="Modules\General.cs" />
-    <Compile Include="Modules\Player.cs" />
-    <Compile Include="Collection\Users\User.cs" />
-    <Compile Include="Collection\Users\Users.cs" />
+    <Compile Include="Resources\Collection\Audio.cs" />
+    <Compile Include="Resources\Collection\Data.cs" />
+    <Compile Include="Resources\Modules\General.cs" />
+    <Compile Include="Resources\Modules\Player.cs" />
+    <Compile Include="Resources\Collection\Users\User.cs" />
+    <Compile Include="Resources\Collection\Users\Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Menu.resx">

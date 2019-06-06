@@ -134,3 +134,4 @@ C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\Syste
 C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\System.Threading.Tasks.Extensions.xml
 C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\Victoria.xml
 C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\obj\Release\DiscordBot.exe.config
+C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\System.Management.Automation.dll
