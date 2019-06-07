@@ -154,6 +154,7 @@
     </Compile>
     <Compile Include="Resources\Collection\Audio.cs" />
     <Compile Include="Resources\Collection\Data.cs" />
+    <Compile Include="Resources\Config.cs" />
     <Compile Include="Resources\Modules\General.cs" />
     <Compile Include="Resources\Modules\Player.cs" />
     <Compile Include="Resources\Collection\Users\User.cs" />

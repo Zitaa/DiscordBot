@@ -11,31 +11,41 @@ namespace DiscordBot.Collection
 {
     public static class Data
     {
+        public static string DirectoryPath { get; private set; }
         public static string AccountPath { get; private set; }
+        public static string ConfigPath { get; private set; }
 
         public static void Initialize()
         {
-            AccountPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName
-                + @"\Resources\Data\Users.json";
+            DirectoryPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+            AccountPath = DirectoryPath + @"\Resources\Data\Users.json";
+            ConfigPath = DirectoryPath + @"\Resources\Config.cfg";
 
             Menu.instance.Log("Data ready.");
         }
 
-        public static void SaveUsers(IEnumerable<User> users)
+        public static T Load<T>(string path)
+        {
+            if (DataExists(path))
+            {
+                string json = File.ReadAllText(path);
+                return JsonConvert.DeserializeObject<T>(json);
+            }
+            return default;
+        }
+
+        public static void Save<T>(T objectToSave, string path)
+        {
+            string json = JsonConvert.SerializeObject(objectToSave, Formatting.Indented);
+            File.WriteAllText(path, json);
+        }
+
+        /*public static void SaveUsers(IEnumerable<User> users)
         {
             string json = JsonConvert.SerializeObject(users, Formatting.Indented);
             File.WriteAllText(AccountPath, json);
-        }
-
-        public static IEnumerable<User> LoadUsers()
-        {
-            if (File.Exists(AccountPath))
-            {
-                string json = File.ReadAllText(AccountPath);
-                return JsonConvert.DeserializeObject<List<User>>(json);
-            }
-            else return null;
-        }
+        }*/
 
         public static bool DataExists(string path)
         {

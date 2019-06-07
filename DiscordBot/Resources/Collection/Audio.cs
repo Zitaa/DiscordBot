@@ -1,6 +1,7 @@
 ﻿using Discord;
 using Discord.WebSocket;
 using DiscordBot.Collection;
+using DiscordBot.Resources;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -45,7 +46,7 @@ namespace DiscordBot.Modules
 
             if (query != null)
             {
-                LavaPlayer player = lavalink.DefaultNode.GetPlayer(DiscordBot.GuildID);
+                LavaPlayer player = lavalink.DefaultNode.GetPlayer(Config.Bot.ServerID);
                 player.TextChannel = channel;
 
                 IUserMessage message = await player.TextChannel.SendMessageAsync("Searching...");
@@ -80,7 +81,7 @@ namespace DiscordBot.Modules
 
         public async Task<Embed> PauseCurrentTrack(SocketGuildUser user, IMessageChannel channel)
         {
-            LavaPlayer player = lavalink.DefaultNode.GetPlayer(DiscordBot.GuildID);
+            LavaPlayer player = lavalink.DefaultNode.GetPlayer(Config.Bot.ServerID);
             player.TextChannel = channel;
 
             if (player.CurrentTrack != null)
@@ -101,7 +102,7 @@ namespace DiscordBot.Modules
 
         public async Task<Embed> SkipCurrentlyPlayingTrack(SocketGuildUser user, IMessageChannel channel)
         {
-            LavaPlayer player = lavalink.DefaultNode.GetPlayer(DiscordBot.GuildID);
+            LavaPlayer player = lavalink.DefaultNode.GetPlayer(Config.Bot.ServerID);
             player.TextChannel = channel;
 
             if (player.CurrentTrack != null && player.IsPlaying)
@@ -122,7 +123,7 @@ namespace DiscordBot.Modules
 
         public async Task<Embed> SetVolume(SocketGuildUser user, IMessageChannel channel, int volume)
         {
-            LavaPlayer player = lavalink.DefaultNode.GetPlayer(DiscordBot.GuildID);
+            LavaPlayer player = lavalink.DefaultNode.GetPlayer(Config.Bot.ServerID);
 
             if (player.VoiceChannel != null)
             {
@@ -134,7 +135,7 @@ namespace DiscordBot.Modules
 
         public async Task<Embed> ListQueue(SocketGuildUser user, IMessageChannel channel)
         {
-            LavaPlayer player = lavalink.DefaultNode.GetPlayer(DiscordBot.GuildID);
+            LavaPlayer player = lavalink.DefaultNode.GetPlayer(Config.Bot.ServerID);
             player.TextChannel = channel;
 
             string trackTitles = "Currently Playing: " + player.CurrentTrack.Title + "\n\n";
@@ -148,7 +149,7 @@ namespace DiscordBot.Modules
 
         public async Task<Embed> LoopTrack(SocketGuildUser user, IMessageChannel channel)
         {
-            LavaPlayer player = lavalink.DefaultNode.GetPlayer(DiscordBot.GuildID);
+            LavaPlayer player = lavalink.DefaultNode.GetPlayer(Config.Bot.ServerID);
 
             Loop = !Loop;
 

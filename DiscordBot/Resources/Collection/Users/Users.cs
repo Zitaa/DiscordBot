@@ -15,7 +15,7 @@ namespace DiscordBot.Collection.Users
         public static void Initialize()
         {
             if (Data.DataExists(Data.AccountPath))
-                users = Data.LoadUsers().ToList();
+                users = Data.Load<List<User>>(Data.AccountPath).ToList();
             else
             {
                 users = new List<User>();
@@ -59,7 +59,7 @@ namespace DiscordBot.Collection.Users
             return GetOrCreateUser(socketUser);
         }
 
-        public static void SaveUsers() => Data.SaveUsers(users);
+        public static void SaveUsers() => Data.Save(users, Data.AccountPath);
 
         public static List<User> GetUsers() => users;
     }

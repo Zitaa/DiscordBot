@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DiscordBot.Collection;
 using Victoria;
+using DiscordBot.Resources;
 
 namespace DiscordBot
 {
-    class DiscordBot
+    public class DiscordBot
     {
         public const ulong GuildID = 238744571213905920;
 
@@ -28,16 +29,20 @@ namespace DiscordBot
             commands = new CommandService();
             lavalink = new Lavalink();
 
+            if (!Config.Initialize()) return;
             Data.Initialize();
             Users.Initialize();
 
-            services = new ServiceCollection()
-                .AddSingleton(client)
-                .AddSingleton(commands)
-                .AddSingleton(lavalink)
-                .AddSingleton<Audio>()
-                .BuildServiceProvider();
+            SetupServices();
+            SetupEvents();
 
+            await RegisterCommands();
+            await client.LoginAsync(TokenType.Bot, Config.Bot.Prefix);
+            await client.StartAsync();
+        }
+
+        private void SetupEvents()
+        {
             Application.ApplicationExit += OnExit;
             lavalink.Log += Log;
             client.Log += Log;
@@ -45,10 +50,16 @@ namespace DiscordBot
             client.UserLeft += OnUserLeave;
             client.ReactionAdded += OnReact;
             client.Ready += OnReady;
+        }
 
-            await RegisterCommands();
-            await client.LoginAsync(TokenType.Bot, token);
-            await client.StartAsync();
+        private void SetupServices()
+        {
+            services = new ServiceCollection()
+                .AddSingleton(client)
+                .AddSingleton(commands)
+                .AddSingleton(lavalink)
+                .AddSingleton<Audio>()
+                .BuildServiceProvider();
         }
 
         public async void Terminate()
