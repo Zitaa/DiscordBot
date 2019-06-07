@@ -1631,3 +1631,1291 @@ Identify and stop the process that's listening on port 2333 or configure this ap
 2019-06-07 13:13:14.869  INFO 9564 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
 2019-06-07 13:13:14.870  INFO 9564 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2019-06-07 13:13:14.871  INFO 9564 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:36:07.368  INFO 8892 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:36:07.432  INFO 8892 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:36:07.562  INFO 8892 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 8892 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:36:07.579  INFO 8892 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:36:07.639  INFO 8892 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:36:07 CEST 2019]; root of context hierarchy
+2019-06-07 13:36:07.690  WARN 8892 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:36:08.930  INFO 8892 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:36:08.948  INFO 8892 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:36:09.043  WARN 8892 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:36:09.043  WARN 8892 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:36:09.063  INFO 8892 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:36:09.063  INFO 8892 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1424 ms
+2019-06-07 13:36:09.116  INFO 8892 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:36:09.121  INFO 8892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:36:09.122  INFO 8892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:36:09.122  INFO 8892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:36:09.123  INFO 8892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:36:09.123  INFO 8892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:36:09.557  WARN 8892 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:36:09.566  INFO 8892 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:36:09.566  INFO 8892 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:36:09.567  INFO 8892 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:36:09.567  INFO 8892 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:36:10.128  INFO 8892 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:36:10.254  INFO 8892 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:36:10.438  INFO 8892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:36:10.645  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:36:07 CEST 2019]; root of context hierarchy
+2019-06-07 13:36:10.736  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:36:10.741  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:36:10.742  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:36:10.743  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:36:10.746  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:36:10.748  INFO 8892 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:36:10.781  INFO 8892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:36:10.782  INFO 8892 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:36:11.034  INFO 8892 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:36:11.041  INFO 8892 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:36:11.099  INFO 8892 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:36:11.103 ERROR 8892 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:36:11.107 ERROR 8892 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:36:11.109  INFO 8892 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:36:07 CEST 2019]; root of context hierarchy
+2019-06-07 13:36:11.110  INFO 8892 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:36:11.111  INFO 8892 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:36:11.113  INFO 8892 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:36:55.544  INFO 16720 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:36:55.591  INFO 16720 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:36:55.707  INFO 16720 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 16720 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:36:55.709  INFO 16720 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:36:55.754  INFO 16720 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:36:55 CEST 2019]; root of context hierarchy
+2019-06-07 13:36:55.801  WARN 16720 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:36:57.085  INFO 16720 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:36:57.100  INFO 16720 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:36:57.192  WARN 16720 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:36:57.193  WARN 16720 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:36:57.219  INFO 16720 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:36:57.219  INFO 16720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1465 ms
+2019-06-07 13:36:57.274  INFO 16720 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:36:57.278  INFO 16720 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:36:57.279  INFO 16720 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:36:57.279  INFO 16720 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:36:57.280  INFO 16720 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:36:57.280  INFO 16720 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:36:57.733  WARN 16720 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:36:57.742  INFO 16720 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:36:57.743  INFO 16720 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:36:57.743  INFO 16720 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:36:57.743  INFO 16720 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:36:58.283  INFO 16720 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:36:58.383  INFO 16720 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:36:58.574  INFO 16720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:36:58.800  INFO 16720 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:36:55 CEST 2019]; root of context hierarchy
+2019-06-07 13:36:58.886  INFO 16720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:36:58.891  INFO 16720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:36:58.892  INFO 16720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:36:58.893  INFO 16720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:36:58.896  INFO 16720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:36:58.898  INFO 16720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:36:58.928  INFO 16720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:36:58.928  INFO 16720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:36:59.177  INFO 16720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:36:59.186  INFO 16720 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:36:59.245  INFO 16720 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:36:59.249 ERROR 16720 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:36:59.252 ERROR 16720 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:36:59.254  INFO 16720 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:36:55 CEST 2019]; root of context hierarchy
+2019-06-07 13:36:59.255  INFO 16720 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:36:59.256  INFO 16720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:36:59.258  INFO 16720 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:37:13.110  INFO 11860 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:37:13.158  INFO 11860 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:37:13.260  INFO 11860 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 11860 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:37:13.261  INFO 11860 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:37:13.307  INFO 11860 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:37:13 CEST 2019]; root of context hierarchy
+2019-06-07 13:37:13.355  WARN 11860 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:37:14.494  INFO 11860 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:37:14.507  INFO 11860 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:37:14.601  WARN 11860 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:37:14.602  WARN 11860 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:37:14.633  INFO 11860 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:37:14.633  INFO 11860 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1326 ms
+2019-06-07 13:37:14.689  INFO 11860 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:37:14.694  INFO 11860 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:37:14.695  INFO 11860 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:37:14.695  INFO 11860 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:37:14.696  INFO 11860 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:37:14.696  INFO 11860 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:37:15.130  WARN 11860 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:37:15.138  INFO 11860 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:37:15.138  INFO 11860 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:37:15.139  INFO 11860 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:37:15.139  INFO 11860 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:37:15.754  INFO 11860 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:37:15.883  INFO 11860 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:37:16.054  INFO 11860 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:37:16.273  INFO 11860 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:37:13 CEST 2019]; root of context hierarchy
+2019-06-07 13:37:16.367  INFO 11860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:37:16.371  INFO 11860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:37:16.373  INFO 11860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:37:16.374  INFO 11860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:37:16.378  INFO 11860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:37:16.380  INFO 11860 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:37:16.412  INFO 11860 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:37:16.412  INFO 11860 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:37:16.656  INFO 11860 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:37:16.665  INFO 11860 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:37:16.737  INFO 11860 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:37:16.763 ERROR 11860 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:37:16.770 ERROR 11860 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:37:16.772  INFO 11860 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:37:13 CEST 2019]; root of context hierarchy
+2019-06-07 13:37:16.774  INFO 11860 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:37:16.775  INFO 11860 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:37:16.779  INFO 11860 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:40:53.125  INFO 9276 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:40:53.182  INFO 9276 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:40:53.303  INFO 9276 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 9276 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:40:53.304  INFO 9276 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:40:53.353  INFO 9276 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:40:53 CEST 2019]; root of context hierarchy
+2019-06-07 13:40:53.448  WARN 9276 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:40:54.663  INFO 9276 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:40:54.681  INFO 9276 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:40:54.787  WARN 9276 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:40:54.788  WARN 9276 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:40:54.815  INFO 9276 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:40:54.816  INFO 9276 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1463 ms
+2019-06-07 13:40:54.873  INFO 9276 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:40:54.878  INFO 9276 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:40:54.880  INFO 9276 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:40:54.880  INFO 9276 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:40:54.881  INFO 9276 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:40:54.882  INFO 9276 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:40:55.348  WARN 9276 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:40:55.362  INFO 9276 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:40:55.363  INFO 9276 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:40:55.365  INFO 9276 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:40:55.366  INFO 9276 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:40:55.958  INFO 9276 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:40:56.030  INFO 9276 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:40:56.196  INFO 9276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:40:56.412  INFO 9276 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:40:53 CEST 2019]; root of context hierarchy
+2019-06-07 13:40:56.502  INFO 9276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:40:56.507  INFO 9276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:40:56.508  INFO 9276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:40:56.509  INFO 9276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:40:56.512  INFO 9276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:40:56.514  INFO 9276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:40:56.544  INFO 9276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:40:56.545  INFO 9276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:40:56.825  INFO 9276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:40:56.832  INFO 9276 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:40:56.895  INFO 9276 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:40:56.899 ERROR 9276 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:40:56.903 ERROR 9276 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:40:56.905  INFO 9276 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:40:53 CEST 2019]; root of context hierarchy
+2019-06-07 13:40:56.907  INFO 9276 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:40:56.907  INFO 9276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:40:56.909  INFO 9276 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:42:06.171  INFO 4208 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:42:06.221  INFO 4208 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:42:06.331  INFO 4208 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 4208 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:42:06.332  INFO 4208 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:42:06.375  INFO 4208 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:42:06 CEST 2019]; root of context hierarchy
+2019-06-07 13:42:06.461  WARN 4208 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:42:07.551  INFO 4208 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:42:07.569  INFO 4208 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:42:07.678  WARN 4208 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:42:07.680  WARN 4208 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:42:07.717  INFO 4208 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:42:07.717  INFO 4208 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1342 ms
+2019-06-07 13:42:07.785  INFO 4208 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:42:07.790  INFO 4208 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:42:07.792  INFO 4208 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:42:07.792  INFO 4208 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:42:07.793  INFO 4208 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:42:07.793  INFO 4208 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:42:08.268  WARN 4208 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:42:08.275  INFO 4208 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:42:08.276  INFO 4208 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:42:08.276  INFO 4208 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:42:08.276  INFO 4208 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:42:08.910  INFO 4208 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:42:08.989  INFO 4208 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:42:09.252  INFO 4208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:42:09.535  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:42:06 CEST 2019]; root of context hierarchy
+2019-06-07 13:42:09.642  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:42:09.647  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:42:09.648  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:42:09.649  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:42:09.653  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:42:09.655  INFO 4208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:42:09.692  INFO 4208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:42:09.693  INFO 4208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:42:09.977  INFO 4208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:42:09.997  INFO 4208 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:42:10.133  INFO 4208 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:42:10.138 ERROR 4208 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:42:10.145 ERROR 4208 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:42:10.147  INFO 4208 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:42:06 CEST 2019]; root of context hierarchy
+2019-06-07 13:42:10.149  INFO 4208 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:42:10.150  INFO 4208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:42:10.151  INFO 4208 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:44:17.390  INFO 20172 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:44:17.440  INFO 20172 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:44:17.547  INFO 20172 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 20172 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:44:17.549  INFO 20172 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:44:17.591  INFO 20172 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:44:17 CEST 2019]; root of context hierarchy
+2019-06-07 13:44:17.675  WARN 20172 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:44:18.771  INFO 20172 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:44:18.788  INFO 20172 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:44:18.873  WARN 20172 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:44:18.874  WARN 20172 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:44:18.899  INFO 20172 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:44:18.899  INFO 20172 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1308 ms
+2019-06-07 13:44:18.952  INFO 20172 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:44:18.956  INFO 20172 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:44:18.958  INFO 20172 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:44:18.958  INFO 20172 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:44:18.959  INFO 20172 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:44:18.959  INFO 20172 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:44:19.400  WARN 20172 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:44:19.407  INFO 20172 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:44:19.407  INFO 20172 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:44:19.408  INFO 20172 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:44:19.408  INFO 20172 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:44:19.925  INFO 20172 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:44:20.009  INFO 20172 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:44:20.213  INFO 20172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:44:20.433  INFO 20172 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:44:17 CEST 2019]; root of context hierarchy
+2019-06-07 13:44:20.525  INFO 20172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:44:20.530  INFO 20172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:44:20.531  INFO 20172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:44:20.532  INFO 20172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:44:20.537  INFO 20172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:44:20.548  INFO 20172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:44:20.580  INFO 20172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:44:20.581  INFO 20172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:44:20.831  INFO 20172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:44:20.839  INFO 20172 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:44:20.898  INFO 20172 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:44:20.901 ERROR 20172 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:44:20.906 ERROR 20172 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:44:20.908  INFO 20172 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:44:17 CEST 2019]; root of context hierarchy
+2019-06-07 13:44:20.909  INFO 20172 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:44:20.910  INFO 20172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:44:20.911  INFO 20172 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:45:10.600  INFO 9808 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:45:10.648  INFO 9808 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:45:10.753  INFO 9808 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 9808 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:45:10.755  INFO 9808 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:45:10.804  INFO 9808 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:45:10 CEST 2019]; root of context hierarchy
+2019-06-07 13:45:10.849  WARN 9808 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:45:12.034  INFO 9808 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:45:12.049  INFO 9808 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:45:12.143  WARN 9808 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:45:12.143  WARN 9808 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:45:12.167  INFO 9808 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:45:12.167  INFO 9808 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1363 ms
+2019-06-07 13:45:12.221  INFO 9808 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:45:12.225  INFO 9808 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:45:12.226  INFO 9808 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:45:12.226  INFO 9808 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:45:12.227  INFO 9808 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:45:12.227  INFO 9808 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:45:12.692  WARN 9808 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:45:12.700  INFO 9808 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:45:12.700  INFO 9808 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:45:12.700  INFO 9808 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:45:12.701  INFO 9808 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:45:13.216  INFO 9808 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:45:13.321  INFO 9808 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:45:13.503  INFO 9808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:45:13.716  INFO 9808 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:45:10 CEST 2019]; root of context hierarchy
+2019-06-07 13:45:13.799  INFO 9808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:45:13.804  INFO 9808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:45:13.805  INFO 9808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:45:13.806  INFO 9808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:45:13.810  INFO 9808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:45:13.812  INFO 9808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:45:13.849  INFO 9808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:45:13.849  INFO 9808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:45:14.091  INFO 9808 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:45:14.099  INFO 9808 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:45:14.161  INFO 9808 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:45:14.165 ERROR 9808 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:45:14.169 ERROR 9808 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:45:14.171  INFO 9808 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:45:10 CEST 2019]; root of context hierarchy
+2019-06-07 13:45:14.173  INFO 9808 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:45:14.174  INFO 9808 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:45:14.177  INFO 9808 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:45:23.229  INFO 6636 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:45:23.280  INFO 6636 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:45:23.394  INFO 6636 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 6636 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:45:23.395  INFO 6636 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:45:23.440  INFO 6636 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:45:23 CEST 2019]; root of context hierarchy
+2019-06-07 13:45:23.515  WARN 6636 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:45:24.606  INFO 6636 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:45:24.622  INFO 6636 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:45:24.723  WARN 6636 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:45:24.723  WARN 6636 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:45:24.751  INFO 6636 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:45:24.752  INFO 6636 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1312 ms
+2019-06-07 13:45:24.808  INFO 6636 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:45:24.814  INFO 6636 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:45:24.815  INFO 6636 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:45:24.815  INFO 6636 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:45:24.816  INFO 6636 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:45:24.816  INFO 6636 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:45:25.254  WARN 6636 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:45:25.261  INFO 6636 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:45:25.262  INFO 6636 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:45:25.262  INFO 6636 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:45:25.262  INFO 6636 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:45:25.799  INFO 6636 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:45:25.964  INFO 6636 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:45:26.142  INFO 6636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:45:26.362  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:45:23 CEST 2019]; root of context hierarchy
+2019-06-07 13:45:26.462  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:45:26.497  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:45:26.503  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:45:26.510  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:45:26.519  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:45:26.525  INFO 6636 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:45:26.557  INFO 6636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:45:26.558  INFO 6636 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:45:26.832  INFO 6636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:45:26.842  INFO 6636 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:45:26.916  INFO 6636 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:45:26.921 ERROR 6636 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:45:26.927 ERROR 6636 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:45:26.930  INFO 6636 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:45:23 CEST 2019]; root of context hierarchy
+2019-06-07 13:45:26.932  INFO 6636 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:45:26.933  INFO 6636 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:45:26.935  INFO 6636 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:46:10.013  INFO 19032 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:46:10.069  INFO 19032 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:46:10.221  INFO 19032 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 19032 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:46:10.222  INFO 19032 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:46:10.278  INFO 19032 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:46:10 CEST 2019]; root of context hierarchy
+2019-06-07 13:46:10.311  WARN 19032 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:46:11.524  INFO 19032 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:46:11.541  INFO 19032 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:46:11.657  WARN 19032 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:46:11.658  WARN 19032 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:46:11.690  INFO 19032 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:46:11.691  INFO 19032 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1413 ms
+2019-06-07 13:46:11.754  INFO 19032 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:46:11.760  INFO 19032 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:46:11.761  INFO 19032 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:46:11.761  INFO 19032 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:46:11.762  INFO 19032 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:46:11.763  INFO 19032 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:46:12.226  WARN 19032 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:46:12.233  INFO 19032 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:46:12.234  INFO 19032 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:46:12.234  INFO 19032 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:46:12.234  INFO 19032 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:46:12.829  INFO 19032 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:46:12.912  INFO 19032 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:46:13.097  INFO 19032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:46:13.356  INFO 19032 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:46:10 CEST 2019]; root of context hierarchy
+2019-06-07 13:46:13.477  INFO 19032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:46:13.488  INFO 19032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:46:13.490  INFO 19032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:46:13.492  INFO 19032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:46:13.498  INFO 19032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:46:13.500  INFO 19032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:46:13.546  INFO 19032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:46:13.547  INFO 19032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:46:13.898  INFO 19032 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:46:13.906  INFO 19032 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:46:13.973  INFO 19032 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:46:13.984 ERROR 19032 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:46:13.989 ERROR 19032 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:46:13.991  INFO 19032 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:46:10 CEST 2019]; root of context hierarchy
+2019-06-07 13:46:14.004  INFO 19032 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:46:14.012  INFO 19032 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:46:14.020  INFO 19032 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:50:58.439  INFO 17936 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:50:58.484  INFO 17936 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:50:58.591  INFO 17936 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 17936 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:50:58.592  INFO 17936 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:50:58.641  INFO 17936 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:50:58 CEST 2019]; root of context hierarchy
+2019-06-07 13:50:58.720  WARN 17936 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:50:59.879  INFO 17936 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:50:59.898  INFO 17936 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:51:00.001  WARN 17936 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:51:00.002  WARN 17936 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:51:00.030  INFO 17936 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:51:00.030  INFO 17936 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1389 ms
+2019-06-07 13:51:00.084  INFO 17936 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:51:00.088  INFO 17936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:51:00.089  INFO 17936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:51:00.089  INFO 17936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:51:00.090  INFO 17936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:51:00.090  INFO 17936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:51:00.511  WARN 17936 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:51:00.520  INFO 17936 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:51:00.521  INFO 17936 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:51:00.522  INFO 17936 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:51:00.522  INFO 17936 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:51:00.688  INFO 18372 --- [XNIO-2 task-9] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:56472
+2019-06-07 13:51:00.706  INFO 18372 --- [XNIO-2 task-9] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:51:00.715  INFO 18372 --- [XNIO-2 task-9] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:56472
+2019-06-07 13:51:01.287  INFO 17936 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:51:01.348  INFO 17936 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:51:01.536  INFO 17936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:51:01.795  INFO 17936 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:50:58 CEST 2019]; root of context hierarchy
+2019-06-07 13:51:01.900  INFO 17936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:51:01.909  INFO 17936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:51:01.920  INFO 17936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:51:01.927  INFO 17936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:51:01.934  INFO 18372 --- [XNIO-2 I/O-4] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:56472 -- CloseStatus[code=1006, reason=]
+2019-06-07 13:51:01.933  INFO 17936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:51:01.937  INFO 18372 --- [XNIO-2 I/O-4] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2019-06-07 13:51:01.938  INFO 17936 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:51:01.943  INFO 18372 --- [XNIO-2 I/O-4] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:51:02.007  INFO 17936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:51:02.011  INFO 17936 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:51:02.377  INFO 17936 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:51:02.407  INFO 17936 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:51:02.589  INFO 17936 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:51:02.593 ERROR 17936 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:51:02.603 ERROR 17936 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:51:02.606  INFO 17936 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30c7da1e: startup date [Fri Jun 07 13:50:58 CEST 2019]; root of context hierarchy
+2019-06-07 13:51:02.608  INFO 17936 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:51:02.609  INFO 17936 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:51:02.611  INFO 17936 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:51:44.364  INFO 20436 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:51:44.413  INFO 20436 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:51:44.521  INFO 20436 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 20436 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:51:44.523  INFO 20436 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:51:44.568  INFO 20436 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:51:44 CEST 2019]; root of context hierarchy
+2019-06-07 13:51:44.608  WARN 20436 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:51:45.711  INFO 20436 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:51:45.728  INFO 20436 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:51:45.840  WARN 20436 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:51:45.841  WARN 20436 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:51:45.869  INFO 20436 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:51:45.869  INFO 20436 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1301 ms
+2019-06-07 13:51:45.923  INFO 20436 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:51:45.928  INFO 20436 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:51:45.928  INFO 20436 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:51:45.929  INFO 20436 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:51:45.929  INFO 20436 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:51:45.930  INFO 20436 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:51:46.395  WARN 20436 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:51:46.402  INFO 20436 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:51:46.403  INFO 20436 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:51:46.403  INFO 20436 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:51:46.404  INFO 20436 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:51:46.495  INFO 18372 --- [XNIO-2 task-10] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:56526
+2019-06-07 13:51:46.498  INFO 18372 --- [XNIO-2 task-10] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:51:46.503  INFO 18372 --- [XNIO-2 task-10] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:56526
+2019-06-07 13:51:47.022  INFO 20436 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:51:47.140  INFO 20436 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:51:47.328  INFO 20436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:51:47.623  INFO 20436 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:51:44 CEST 2019]; root of context hierarchy
+2019-06-07 13:51:47.728  INFO 20436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:51:47.733  INFO 20436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:51:47.735  INFO 20436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:51:47.736  INFO 20436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:51:47.742  INFO 20436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:51:47.744  INFO 20436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:51:47.777  INFO 20436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:51:47.777  INFO 20436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:51:48.034  INFO 20436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:51:48.041  INFO 20436 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:51:48.103  INFO 20436 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:51:48.108 ERROR 20436 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:51:48.114 ERROR 20436 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:51:48.118  INFO 20436 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:51:44 CEST 2019]; root of context hierarchy
+2019-06-07 13:51:48.120  INFO 20436 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:51:48.122  INFO 20436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:51:48.123  INFO 20436 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:51:48.852  INFO 18372 --- [XNIO-2 I/O-2] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:56526 -- CloseStatus[code=1006, reason=]
+2019-06-07 13:51:48.853  INFO 18372 --- [XNIO-2 I/O-2] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2019-06-07 13:51:48.854  INFO 18372 --- [XNIO-2 I/O-2] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:53:52.278  INFO 3684 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        b0a0eca2ee66750fec199094b900b191a92074a9-SNAPSHOT
+	Build:          768
+	Build time:     01.04.2019 21:26:58 CEST
+	Branch          master
+	Commit:         b0a0eca
+	Commit time:    01.04.2019 21:25:14 CEST
+	JVM:            1.8.0_211
+	Lavaplayer      1.3.10
+
+2019-06-07 13:53:52.350  INFO 3684 --- [main] o.s.boot.SpringApplication               :        .   _                  _ _       _    __ _ _
+      /\\ | | __ ___   ____ _| (_)_ __ | | __\ \ \ \
+     ( ( )| |/ _` \ \ / / _` | | | '_ \| |/ / \ \ \ \
+      \\/ | | (_| |\ V / (_| | | | | | |   <   ) ) ) )
+       '  |_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\ / / / /
+    =========================================/_/_/_/
+
+    :: Lavalink    ::       
+    :: Spring Boot ::        (v2.0.4.RELEASE)
+
+
+2019-06-07 13:53:52.480  INFO 3684 --- [main] lavalink.server.Launcher                 : Starting Launcher on DESKTOP-CLQ6C0H with PID 3684 (C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Lavalink.jar started by haegg in C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin)
+2019-06-07 13:53:52.484  INFO 3684 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2019-06-07 13:53:52.538  INFO 3684 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:53:52 CEST 2019]; root of context hierarchy
+2019-06-07 13:53:52.621  WARN 3684 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2019-06-07 13:53:53.712  INFO 3684 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-06-07 13:53:53.730  INFO 3684 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-06-07 13:53:53.821  WARN 3684 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2019-06-07 13:53:53.821  WARN 3684 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-06-07 13:53:53.845  INFO 3684 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-06-07 13:53:53.845  INFO 3684 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1307 ms
+2019-06-07 13:53:53.900  INFO 3684 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-06-07 13:53:53.904  INFO 3684 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-07 13:53:53.905  INFO 3684 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-07 13:53:53.905  INFO 3684 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-07 13:53:53.906  INFO 3684 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-07 13:53:53.906  INFO 3684 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'responseHeaderFilter' to: [/*]
+2019-06-07 13:53:54.348  WARN 3684 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2019-06-07 13:53:54.355  INFO 3684 --- [main] l.s.c.AudioSendFactoryConfiguration      : OS: Windows 10, Arch: amd64
+2019-06-07 13:53:54.356  INFO 3684 --- [main] l.s.c.AudioSendFactoryConfiguration      : JDA-NAS supported system detected. Enabled native audio sending.
+2019-06-07 13:53:54.356  INFO 3684 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting buffer to 400ms
+2019-06-07 13:53:54.357  INFO 3684 --- [main] l.s.c.AudioSendFactoryConfiguration      : Setting playlist load limit to 6
+2019-06-07 13:53:54.908  INFO 3684 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:53:55.026  INFO 3684 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Root mapping to handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2019-06-07 13:53:55.180  INFO 18372 --- [XNIO-2 task-11] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:56615
+2019-06-07 13:53:55.183  INFO 18372 --- [XNIO-2 task-11] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2019-06-07 13:53:55.189  INFO 18372 --- [XNIO-2 task-11] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:56615
+2019-06-07 13:53:55.193  INFO 3684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:53:55.434  INFO 3684 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:53:52 CEST 2019]; root of context hierarchy
+2019-06-07 13:53:55.523  INFO 3684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/debug/nashorn],methods=[POST]}" onto public java.lang.String lavalink.server.util.DebugRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2019-06-07 13:53:55.529  INFO 3684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loadtracks],methods=[GET],produces=[application/json]}" onto public java.util.concurrent.CompletionStage<org.springframework.http.ResponseEntity<java.lang.String>> lavalink.server.player.AudioLoaderRestHandler.getLoadTracks(javax.servlet.http.HttpServletRequest,java.lang.String)
+2019-06-07 13:53:55.530  INFO 3684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetrack],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.getDecodeTrack(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:53:55.531  INFO 3684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decodetracks],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> lavalink.server.player.AudioLoaderRestHandler.postDecodeTracks(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.io.IOException
+2019-06-07 13:53:55.535  INFO 3684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-07 13:53:55.537  INFO 3684 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-07 13:53:55.568  INFO 3684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:53:55.568  INFO 3684 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-07 13:53:55.808  INFO 3684 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-06-07 13:53:55.817  INFO 3684 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-06-07 13:53:55.885  INFO 3684 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-07 13:53:55.889 ERROR 3684 --- [main] lavalink.server.Launcher                 : Application failed
+
+org.springframework.boot.web.server.PortInUseException: Port 2333 is already in use
+	at org.springframework.boot.web.embedded.undertow.UndertowServletWebServer.start(UndertowServletWebServer.java:159) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) ~[spring-context-5.0.8.RELEASE.jar!/:5.0.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330) ~[spring-boot-2.0.4.RELEASE.jar!/:2.0.4.RELEASE]
+	at lavalink.server.Launcher.main(Launcher.java:71) ~[classes!/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_211]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_211]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) ~[Lavalink.jar:na]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) ~[Lavalink.jar:na]
+
+2019-06-07 13:53:55.894 ERROR 3684 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 2333 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 2333 or configure this application to listen on another port.
+
+2019-06-07 13:53:55.895  INFO 3684 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5b464ce8: startup date [Fri Jun 07 13:53:52 CEST 2019]; root of context hierarchy
+2019-06-07 13:53:55.897  INFO 3684 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-06-07 13:53:55.898  INFO 3684 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-06-07 13:53:55.899  INFO 3684 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2019-06-07 13:54:09.420  INFO 18372 --- [XNIO-2 I/O-3] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:56615 -- CloseStatus[code=1006, reason=]

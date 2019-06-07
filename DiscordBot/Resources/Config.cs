@@ -10,13 +10,18 @@ namespace DiscordBot.Resources
         {
             if (Data.DataExists(Data.ConfigPath))
             {
+                Bot = Data.Load<BotConfig>(Data.ConfigPath);
                 Menu.instance.Log("Config ready.");
                 return true;
             }
             else
             {
-                Menu.instance.Log("Config file was not found." +
-                    "\nPlease, make sure there is a config file present in the [Resources] folder.");
+                BotConfig config = new BotConfig();
+                Data.Save(config, Data.ConfigPath);
+
+                Menu.instance.Log(string.Format("Config file was not found. " +
+                    "\nA config file has been created at [{0}]. " +
+                    "\nPlease, open the config file and fill it with correct information.", Data.ConfigPath));
                 return false;
             }
         }

@@ -37,7 +37,7 @@ namespace DiscordBot
             SetupEvents();
 
             await RegisterCommands();
-            await client.LoginAsync(TokenType.Bot, Config.Bot.Prefix);
+            await client.LoginAsync(TokenType.Bot, Config.Bot.Token);
             await client.StartAsync();
         }
 
@@ -87,7 +87,7 @@ namespace DiscordBot
             Users.SaveUsers();
 
             int argPos = 0;
-            if (message.HasStringPrefix(".", ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos))
+            if (message.HasStringPrefix(Config.Bot.Token, ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos))
             {
                 SocketCommandContext context = new SocketCommandContext(client, message);
                 IResult result = await commands.ExecuteAsync(context, argPos, services);

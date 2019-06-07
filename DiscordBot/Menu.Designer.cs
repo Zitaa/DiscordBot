@@ -64,7 +64,7 @@
             this.tokenText.PasswordChar = '*';
             this.tokenText.Size = new System.Drawing.Size(610, 20);
             this.tokenText.TabIndex = 1;
-            this.tokenText.Text = "Mzc0Njk3ODQ1ODQ2MTc5ODUw.XNyPig.f_uk6-NBHa9eCbiUxrBAEzDazWA";
+            this.tokenText.Text = "Mzc0Njk3ODQ1ODQ2MTc5ODUw.XPpPIA.WUu7A4exLjluIHI28SpKlWIEs60";
             // 
             // tokenLabel
             // 

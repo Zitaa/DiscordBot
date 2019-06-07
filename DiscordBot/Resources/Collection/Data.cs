@@ -1,27 +1,17 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DiscordBot.Collection.Users;
+﻿using System.IO;
 using Newtonsoft.Json;
 
 namespace DiscordBot.Collection
 {
     public static class Data
     {
-        public static string DirectoryPath { get; private set; }
-        public static string AccountPath { get; private set; }
-        public static string ConfigPath { get; private set; }
+        public static string AccountPath { get; private set; } =
+            Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\Resources\Data\Users.json";
+        public static string ConfigPath { get; private set; } =
+            Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\Resources\Config.cfg";
 
         public static void Initialize()
         {
-            DirectoryPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-
-            AccountPath = DirectoryPath + @"\Resources\Data\Users.json";
-            ConfigPath = DirectoryPath + @"\Resources\Config.cfg";
-
             Menu.instance.Log("Data ready.");
         }
 
