@@ -16,13 +16,20 @@ namespace DiscordBot.Collection.Users
         {
             if (Data.DataExists(Data.AccountPath))
                 users = Data.Load<List<User>>(Data.AccountPath).ToList();
-            else
-            {
-                users = new List<User>();
-                SaveUsers();
-            }
+            else users = new List<User>();
 
+            RemoveBotMessage();
             Menu.instance.Log("Users ready.");
+        }
+
+        private static void RemoveBotMessage()
+        {
+            foreach (User user in users)
+            {
+                user.BotMessageID = 0;
+                user.EventPhase = string.Empty;
+            }
+            SaveUsers();
         }
 
         private static User GetOrCreateUser(SocketUser socketUser)
@@ -46,7 +53,9 @@ namespace DiscordBot.Collection.Users
                 XP = 0,
                 RequiredXP = 50,
                 Messages = 0,
-                Reactions = 0
+                Reactions = 0,
+                BotMessageID = 0,
+                EventPhase = string.Empty
             };
 
             users.Add(user);
@@ -54,10 +63,7 @@ namespace DiscordBot.Collection.Users
             return user;
         }
 
-        public static User GetUser(SocketUser socketUser)
-        {
-            return GetOrCreateUser(socketUser);
-        }
+        public static User GetUser(SocketUser socketUser) => GetOrCreateUser(socketUser);
 
         public static void SaveUsers() => Data.Save(users, Data.AccountPath);
 

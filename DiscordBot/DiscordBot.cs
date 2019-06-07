@@ -84,7 +84,14 @@ namespace DiscordBot
             User.IncreaseXP(user, 10, message.Channel);
 
             int argPos = 0;
-            if (message.HasStringPrefix(Config.Bot.Token, ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos))
+            if (message.HasStringPrefix(Config.Bot.Prefix, ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos))
+            {
+                SocketCommandContext context = new SocketCommandContext(client, message);
+                IResult result = await commands.ExecuteAsync(context, argPos, services);
+
+                if (!result.IsSuccess) Menu.instance.Log(result.ErrorReason);
+            }
+            else if (user.BotMessageID != 0)
             {
                 SocketCommandContext context = new SocketCommandContext(client, message);
                 IResult result = await commands.ExecuteAsync(context, argPos, services);

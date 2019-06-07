@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Linq;
 using ST = System.Timers;
 using DiscordBot.Collection;
+using DiscordBot.Resources;
 
 namespace DiscordBot
 {
@@ -49,8 +50,8 @@ namespace DiscordBot
 
         private void OnElapsed(object sender, ST.ElapsedEventArgs e)
         {
-            IReadOnlyCollection<SocketGuildUser> users = client.GetGuild(DiscordBot.GuildID).Users;
-            IReadOnlyCollection<IRole> roles = client.GetGuild(DiscordBot.GuildID).Roles;
+            IReadOnlyCollection<SocketGuildUser> users = client.GetGuild(Config.Bot.ServerID).Users;
+            IReadOnlyCollection<IRole> roles = client.GetGuild(Config.Bot.ServerID).Roles;
 
             foreach (SocketGuildUser user in users)
             {
@@ -89,7 +90,7 @@ namespace DiscordBot
 
         public void FillDropdowns()
         {
-            SocketGuild guild = client.GetGuild(DiscordBot.GuildID);
+            SocketGuild guild = client.GetGuild(Config.Bot.ServerID);
 
             foreach (SocketVoiceChannel channel in guild.VoiceChannels)
             {
@@ -116,7 +117,7 @@ namespace DiscordBot
             string username = usersDropdown.SelectedItem.ToString();
             SocketGuildUser user = null;
 
-            foreach (var guildUser in client.GetGuild(DiscordBot.GuildID).Users)
+            foreach (var guildUser in client.GetGuild(Config.Bot.ServerID).Users)
             {
                 if (guildUser.ToString().Equals(username))
                 {
@@ -137,7 +138,7 @@ namespace DiscordBot
             string channelName = textChannelsDropdown.SelectedItem.ToString();
             SocketTextChannel channel = null;
 
-            foreach (var guildChannel in client.GetGuild(DiscordBot.GuildID).TextChannels)
+            foreach (var guildChannel in client.GetGuild(Config.Bot.ServerID).TextChannels)
             {
                 if (guildChannel.Name.Equals(channelName))
                 {

@@ -12,6 +12,8 @@ namespace DiscordBot.Collection.Users
         public int RequiredXP { get; set; }
         public uint Messages { get; set; }
         public uint Reactions { get; set; }
+        public ulong BotMessageID { get; set; }
+        public string EventPhase { get; set; }
 
         public async static Task<Embed> IncreaseLevel(User user)
         {

@@ -39,5 +39,57 @@ namespace DiscordBot.Modules
 
             await ReplyAsync("", false, embed);
         }
+
+        [Command("delete")]
+        public async Task DeleteMessages(int amount = 1)
+        {
+            IEnumerable<IMessage> messages = await Context.Channel.GetMessagesAsync(amount + 1).FlattenAsync();
+            await ((ITextChannel)Context.Channel).DeleteMessagesAsync(messages);
+            await ReplyAsync(string.Format("{0} deleted {1} messages.", Context.User.Username, amount));
+        }
+
+        [Command("event")]
+        public async Task Test()
+        {
+            User user = Users.GetUser(Context.User);
+
+            List<EmbedFieldBuilder> fields = new List<EmbedFieldBuilder>()
+            {
+                new EmbedFieldBuilder() { Name = "Description", Value = "Write the description for your event.", IsInline = false }
+            };
+
+            Embed embed = new EmbedBuilder()
+                .WithAuthor(user.Name)
+                .WithColor(EmbedHandler.color)
+                .WithCurrentTimestamp().Build();
+
+            IMessage message = await ReplyAsync("", false, embed);
+            user.BotMessageID = message.Id;
+            Users.SaveUsers();
+        }
+
+        [Command("test2")]
+        public async Task Test2([Remainder] string description)
+        {
+            User user = Users.GetUser(Context.User);
+            IMessage message = await Context.Channel.GetMessageAsync(user.BotMessageID);
+
+            IEmbed oldEmbed = message.Embeds.First();
+            List<EmbedFieldBuilder> fields = new List<EmbedFieldBuilder>()
+            {
+                new EmbedFieldBuilder() { Name = "Description", Value = description, IsInline = false }
+            };
+
+            Embed embed = new EmbedBuilder()
+                .WithAuthor(oldEmbed.Author.ToString())
+                .WithFields(fields)
+                .WithColor(EmbedHandler.color)
+                .WithCurrentTimestamp().Build();
+
+            await Context.Channel.DeleteMessageAsync(Context.Message);
+            await message.DeleteAsync();
+            IMessage newMessage = await ReplyAsync("", false, embed);
+            user.BotMessageID = newMessage.Id;
+        }
     }
 }
