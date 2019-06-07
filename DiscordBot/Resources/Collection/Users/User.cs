@@ -1,9 +1,4 @@
 ﻿using Discord;
-using DiscordBot.Collection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DiscordBot.Collection.Users
@@ -34,6 +29,7 @@ namespace DiscordBot.Collection.Users
                 user.XP = 0;
                 user.RequiredXP = (int)(user.RequiredXP * 1.25f);
             }
+            Users.SaveUsers();
         }
 
         public static void DecreaseLevel(User user)
@@ -51,6 +47,7 @@ namespace DiscordBot.Collection.Users
                 user.XP = user.RequiredXP - -(difference) + 1;
             }
             else user.XP -= amount;
+            Users.SaveUsers();
         }
     }
 }

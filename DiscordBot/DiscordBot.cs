@@ -16,8 +16,6 @@ namespace DiscordBot
 {
     public class DiscordBot
     {
-        public const ulong GuildID = 238744571213905920;
-
         private DiscordSocketClient client;
         private CommandService commands;
         private Lavalink lavalink;
@@ -84,7 +82,6 @@ namespace DiscordBot
 
             user.Messages++;
             User.IncreaseXP(user, 10, message.Channel);
-            Users.SaveUsers();
 
             int argPos = 0;
             if (message.HasStringPrefix(Config.Bot.Token, ref argPos) || message.HasMentionPrefix(client.CurrentUser, ref argPos))
