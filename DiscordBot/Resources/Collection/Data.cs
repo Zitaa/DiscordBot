@@ -41,12 +41,6 @@ namespace DiscordBot.Collection
             File.WriteAllText(path, json);
         }
 
-        /*public static void SaveUsers(IEnumerable<User> users)
-        {
-            string json = JsonConvert.SerializeObject(users, Formatting.Indented);
-            File.WriteAllText(AccountPath, json);
-        }*/
-
         public static bool DataExists(string path)
         {
             if (File.Exists(path)) return true;
