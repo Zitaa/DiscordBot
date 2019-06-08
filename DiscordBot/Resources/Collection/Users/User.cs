@@ -3,6 +3,13 @@ using System.Threading.Tasks;
 
 namespace DiscordBot.Collection.Users
 {
+    public enum EventPhases
+    {
+        None = 0,
+        Description = 1,
+        Players = 2
+    }
+
     public class User
     {
         public string Name { get; set; }
@@ -13,7 +20,7 @@ namespace DiscordBot.Collection.Users
         public uint Messages { get; set; }
         public uint Reactions { get; set; }
         public ulong BotMessageID { get; set; }
-        public string EventPhase { get; set; }
+        public EventPhases EventPhase { get; set; }
 
         public async static Task<Embed> IncreaseLevel(User user)
         {

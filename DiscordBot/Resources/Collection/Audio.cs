@@ -24,15 +24,17 @@ namespace DiscordBot.Modules
             this.lavalink = lavalink;
 
             Process process = new Process();
-            ProcessStartInfo info = new ProcessStartInfo();
-            info.WindowStyle = ProcessWindowStyle.Hidden;
-            info.FileName = "java";
-            info.WorkingDirectory = @"C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin";
-            info.Arguments = "-jar Lavalink.jar";
+            ProcessStartInfo info = new ProcessStartInfo()
+            {
+                WindowStyle = ProcessWindowStyle.Hidden,
+                FileName = "java",
+                WorkingDirectory = @"C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin",
+                Arguments = "-jar Lavalink.jar"
+            };
             process.StartInfo = info;
             process.Start();
 
-            System.Threading.Thread.Sleep(1200);
+            System.Threading.Thread.Sleep(1400);
 
             Menu.instance.Log("Audio ready");
         }

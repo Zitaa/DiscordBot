@@ -62,6 +62,8 @@ namespace DiscordBot
 
         public async void Terminate()
         {
+            Users.RemoveBotMessage();
+
             await client.LogoutAsync();
             await client.StopAsync();
         }
@@ -69,6 +71,12 @@ namespace DiscordBot
         private Task Log(LogMessage msg)
         {
             Menu.instance.Log(msg.Message);
+            return Task.CompletedTask;
+        }
+
+        private Task Log(string message)
+        {
+            Menu.instance.Log(message);
             return Task.CompletedTask;
         }
 
@@ -94,9 +102,18 @@ namespace DiscordBot
             else if (user.BotMessageID != 0)
             {
                 SocketCommandContext context = new SocketCommandContext(client, message);
-                IResult result = await commands.ExecuteAsync(context, argPos, services);
-
-                if (!result.IsSuccess) Menu.instance.Log(result.ErrorReason);
+                IResult result = default;
+                switch (user.EventPhase)
+                {
+                    case EventPhases.Description:
+                        result = await commands.ExecuteAsync(context, "__UpdateEventDescription " + message.Content, services);
+                        break;
+                    case EventPhases.Players:
+                        result = await commands.ExecuteAsync(context, "__UpdateEventPlayers " + message.Content, services);
+                        break;
+                }
+                if (!result.IsSuccess)
+                    await Log(result.ErrorReason);
             }
         }
 

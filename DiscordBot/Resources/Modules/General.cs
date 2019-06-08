@@ -49,7 +49,7 @@ namespace DiscordBot.Modules
         }
 
         [Command("event")]
-        public async Task Test()
+        public async Task InitializeEvent([Remainder] string name)
         {
             User user = Users.GetUser(Context.User);
 
@@ -60,16 +60,19 @@ namespace DiscordBot.Modules
 
             Embed embed = new EmbedBuilder()
                 .WithAuthor(user.Name)
+                .WithTitle(name)
+                .WithFields(fields)
                 .WithColor(EmbedHandler.color)
                 .WithCurrentTimestamp().Build();
 
             IMessage message = await ReplyAsync("", false, embed);
             user.BotMessageID = message.Id;
+            user.EventPhase = EventPhases.Description;
             Users.SaveUsers();
         }
 
-        [Command("test2")]
-        public async Task Test2([Remainder] string description)
+        [Command("__UpdateEventDescription")]
+        public async Task UpdateEventDescription([Remainder] string description)
         {
             User user = Users.GetUser(Context.User);
             IMessage message = await Context.Channel.GetMessageAsync(user.BotMessageID);
@@ -77,11 +80,13 @@ namespace DiscordBot.Modules
             IEmbed oldEmbed = message.Embeds.First();
             List<EmbedFieldBuilder> fields = new List<EmbedFieldBuilder>()
             {
-                new EmbedFieldBuilder() { Name = "Description", Value = description, IsInline = false }
+                new EmbedFieldBuilder() { Name = "Description", Value = description, IsInline = false },
+                new EmbedFieldBuilder() { Name = "Players", Value = "Specifiy the Maximum Amount of Players", IsInline = false }
             };
 
             Embed embed = new EmbedBuilder()
                 .WithAuthor(oldEmbed.Author.ToString())
+                .WithTitle(oldEmbed.Title)
                 .WithFields(fields)
                 .WithColor(EmbedHandler.color)
                 .WithCurrentTimestamp().Build();
@@ -90,6 +95,56 @@ namespace DiscordBot.Modules
             await message.DeleteAsync();
             IMessage newMessage = await ReplyAsync("", false, embed);
             user.BotMessageID = newMessage.Id;
+            user.EventPhase = EventPhases.Players;
+        }
+
+        [Command("__UpdateEventPlayers")]
+        public async Task UpdateEventPlayers(int amount)
+        {
+            SocketGuild guild = Context.Guild;
+
+            User user = Users.GetUser(Context.User);
+            IMessage message = await Context.Channel.GetMessageAsync(user.BotMessageID);
+
+            IEmbed oldEmbed = message.Embeds.First();
+            List<EmbedFieldBuilder> fields = new List<EmbedFieldBuilder>()
+            {
+                new EmbedFieldBuilder() { Name = "Description", Value = oldEmbed.Fields.First().Value, IsInline = false },
+                new EmbedFieldBuilder() { Name = string.Format("Players [1/{0}]", amount), Value = user.Name, IsInline = false }
+            };
+
+            Embed embed = new EmbedBuilder()
+                .WithAuthor(oldEmbed.Author.ToString())
+                .WithTitle(oldEmbed.Title)
+                .WithFields(fields)
+                .WithColor(EmbedHandler.color)
+                .WithCurrentTimestamp().Build();
+
+            await Context.Channel.DeleteMessageAsync(Context.Message);
+            await message.DeleteAsync();
+            IUserMessage newMessage = await ReplyAsync("", false, embed);
+            IEmote[] emotes = new IEmote[2];
+
+            try
+            {
+                for (int i = 0; i < Context.Guild.Emotes.Count; i++)
+                {
+                    if (Context.Guild.Emotes.ElementAt(i).Name == "checkmark")
+                        emotes[0] = Context.Guild.Emotes.ElementAt(i);
+                    else if (Context.Guild.Emotes.ElementAt(i).Name == "crossmark")
+                        emotes[1] = Context.Guild.Emotes.ElementAt(i);
+                }
+
+                if (newMessage != null)
+                    await newMessage.AddReactionsAsync(emotes);
+            }
+            catch (Exception e)
+            {
+                Menu.instance.Log(e.ToString());
+            }
+
+            user.BotMessageID = 0;
+            user.EventPhase = EventPhases.None;
         }
     }
 }

@@ -22,16 +22,6 @@ namespace DiscordBot.Collection.Users
             Menu.instance.Log("Users ready.");
         }
 
-        private static void RemoveBotMessage()
-        {
-            foreach (User user in users)
-            {
-                user.BotMessageID = 0;
-                user.EventPhase = string.Empty;
-            }
-            SaveUsers();
-        }
-
         private static User GetOrCreateUser(SocketUser socketUser)
         {
             IEnumerable<User> users = from _user in Users.users
@@ -55,12 +45,22 @@ namespace DiscordBot.Collection.Users
                 Messages = 0,
                 Reactions = 0,
                 BotMessageID = 0,
-                EventPhase = string.Empty
+                EventPhase = EventPhases.None
             };
 
             users.Add(user);
             SaveUsers();
             return user;
+        }
+
+        public static void RemoveBotMessage()
+        {
+            foreach (User user in users)
+            {
+                user.BotMessageID = 0;
+                user.EventPhase = EventPhases.None;
+            }
+            SaveUsers();
         }
 
         public static User GetUser(SocketUser socketUser) => GetOrCreateUser(socketUser);
