@@ -22,6 +22,9 @@ namespace DiscordBot
         {
             InitializeComponent();
             instance = this;
+
+            DatabaseMenu databaseMenu = new DatabaseMenu();
+            databaseMenu.Show();
         }
 
         public void Log(string msg)

@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using DiscordBot.Collection;
 using Victoria;
 using DiscordBot.Resources;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace DiscordBot
 {
@@ -135,12 +137,44 @@ namespace DiscordBot
             return Task.CompletedTask;
         }
 
-        private Task OnReact(Cacheable<IUserMessage, ulong> message, ISocketMessageChannel channel, SocketReaction reaction)
+        private async Task OnReact(Cacheable<IUserMessage, ulong> message, ISocketMessageChannel channel, SocketReaction reaction)
         {
             User user = Users.GetUser((SocketGuildUser)reaction.User);
             user.Reactions++;
             Users.SaveUsers();
-            return Task.CompletedTask;
+
+            if (reaction.Emote.Name == "checkmark" || reaction.Emote.Name == "crossmark")
+            {
+                if (message.Value.Embeds.Count > 0)
+                {
+                    IMessage msg = message.Value;
+                    IEmbed oldEmbed = msg.Embeds.First();
+
+                    string players = oldEmbed.Fields.ElementAt(1).Name;
+                    int max = Int32.Parse(players[11].ToString());
+                    int amount = Int32.Parse(players[9].ToString());
+                    amount++;
+
+                    players = oldEmbed.Fields.ElementAt(1).Value;
+                    players += "\n" + user.Name;
+                     
+                    List<EmbedFieldBuilder> fields = new List<EmbedFieldBuilder>()
+                    {
+                        new EmbedFieldBuilder() { Name = "Description", Value = oldEmbed.Fields.ElementAt(0).Value, IsInline = false },
+                        new EmbedFieldBuilder() { Name = string.Format("Players [{0}/{1}]", amount, max), Value = players, IsInline = false }
+                    };
+
+                    Embed embed = new EmbedBuilder()
+                        .WithAuthor(oldEmbed.Author.ToString())
+                        .WithTitle(oldEmbed.Title)
+                        .WithFields(fields)
+                        .WithColor(EmbedHandler.color)
+                        .WithCurrentTimestamp().Build();
+
+                    await msg.DeleteAsync();
+                    await channel.SendMessageAsync("", false, embed);
+                }
+            }
         }
 
         private async Task OnReady()

@@ -123,24 +123,11 @@ namespace DiscordBot.Modules
             await Context.Channel.DeleteMessageAsync(Context.Message);
             await message.DeleteAsync();
             IUserMessage newMessage = await ReplyAsync("", false, embed);
-            IEmote[] emotes = new IEmote[2];
 
-            try
+            foreach (Emote emote in Context.Guild.Emotes)
             {
-                for (int i = 0; i < Context.Guild.Emotes.Count; i++)
-                {
-                    if (Context.Guild.Emotes.ElementAt(i).Name == "checkmark")
-                        emotes[0] = Context.Guild.Emotes.ElementAt(i);
-                    else if (Context.Guild.Emotes.ElementAt(i).Name == "crossmark")
-                        emotes[1] = Context.Guild.Emotes.ElementAt(i);
-                }
-
-                if (newMessage != null)
-                    await newMessage.AddReactionsAsync(emotes);
-            }
-            catch (Exception e)
-            {
-                Menu.instance.Log(e.ToString());
+                if (emote.Name == "checkmark" || emote.Name == "crossmark")
+                    await newMessage.AddReactionAsync(emote);
             }
 
             user.BotMessageID = 0;

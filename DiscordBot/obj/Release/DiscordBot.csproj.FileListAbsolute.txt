@@ -135,3 +135,6 @@ C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\Syste
 C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\Victoria.xml
 C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\obj\Release\DiscordBot.exe.config
 C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\System.Management.Automation.dll
+C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\obj\Release\DiscordBot.DatabaseMenu.resources
+C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\Data\UserDatabase.mdf
+C:\Users\haegg\Desktop\Code\DiscordBot_WindowsForms\DiscordBot\bin\Release\Data\UserDatabase_log.ldf
